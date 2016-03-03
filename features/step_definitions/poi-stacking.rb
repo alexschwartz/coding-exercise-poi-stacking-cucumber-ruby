@@ -7,7 +7,7 @@ When(/^the POIs are stacked$/) do
 end
 
 Then(/^the POI icons in the stack are equal to (.+)$/) do |expected_output_seq|
-   expect(@output).to eq(expected_output_seq)
+   expect(@output.join(',')).to eq(expected_output_seq)
 end
 
 Then(/^the number of POI icons is less than (\d+)$/) do |arg1|
