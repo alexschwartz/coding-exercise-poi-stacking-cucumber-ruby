@@ -16,4 +16,6 @@ Scenario Outline: POI icons are
     Examples:
       | input     | output sequence | comment           |
       |  A,B      |  A,B            |                   |
+      |  A,B,C    |  A,B, C         |                   |
+
  

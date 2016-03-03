@@ -1,15 +1,21 @@
-Given(/^a POI sequence A,B$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^a POI sequence (.+)$/) do |input_data|
+    @input_data = input_data.split(/,/)
 end
 
 When(/^the POIs are stacked$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+    @output = PoiStackingStrategy.new.stack(@input)
 end
 
-Then(/^the POI icons in the stack are equal to A,B$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^the POI icons in the stack are equal to (.+)$/) do |output_seq|
 end
 
 Then(/^the number of POI icons is less than (\d+)$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+end
+
+class PoiStackingStrategy 
+   
+   def stack(input)
+     [ 'A', 'B' ]
+   end
+
 end
