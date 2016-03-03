@@ -6,7 +6,8 @@ When(/^the POIs are stacked$/) do
     @output = PoiStackingStrategy.new.stack(@input)
 end
 
-Then(/^the POI icons in the stack are equal to (.+)$/) do |output_seq|
+Then(/^the POI icons in the stack are equal to (.+)$/) do |expected_output_seq|
+   expect(@output).to eq(expected_output_seq)
 end
 
 Then(/^the number of POI icons is less than (\d+)$/) do |arg1|
