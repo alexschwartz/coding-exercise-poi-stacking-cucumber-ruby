@@ -36,4 +36,6 @@ Scenario Outline: POI icons are
       |  A,B,B,C     |  A,B,...        |
       |  B,B         |  B,...          |
       |  C,C,C       |  C,...          |
+      |  A,B,C,C     |  A,B,...        |
+
 
