@@ -28,6 +28,8 @@ Scenario Outline: POI icons are
       | input        | output sequence | comment           |
       |  A,B,C,D     |  A,B,...        |                   |
       |  B,C,D,E,F,G |  B,C,...        |                   |
+      |  E,B,R,D     |  B,D,...        |                   |
+
 
 
 
