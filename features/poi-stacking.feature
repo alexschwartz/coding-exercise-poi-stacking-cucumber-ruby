@@ -13,8 +13,9 @@ Scenario Outline: POI icons are
     Then the POI icons in the stack are equal to <output sequence> 
      And the number of POI icons is less than 4
     
-    Examples:
+    Examples: initial examples with short input list
       | input     | output sequence | comment           |
+      |  Z        |  Z              |                   |
       |  A,B      |  A,B            |                   |
       |  A,B,C    |  A,B, C         |                   |
 
