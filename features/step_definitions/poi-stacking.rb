@@ -37,7 +37,7 @@ class PoiStackingStrategy
      output = []
      seq = input.sort
      if (seq.length > 3) 
-         return [ 'A', 'B', '...' ]
+         return seq.slice(0,2) << '...'
      end
      seq
    end
