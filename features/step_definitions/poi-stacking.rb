@@ -35,11 +35,30 @@ class PoiStackingStrategy
 
    def stack(input)
      output = []
+ 
      seq = input.sort
+     
+     prev = nil
+     has_dublication = false
+     prev = nil
+     seq.each { |item| 
+         if (item == prev) 
+             has_dublication = true
+             break
+         end
+         prev = item
+     }
+     
      if (seq.length > 3) 
-         return seq.slice(0,2) << '...'
+         return seq.slice(0,2).uniq << '...'
      end
-     seq
+
+
+     if has_dublication
+         return seq.uniq << '...'
+     else
+         return seq
+     end
    end
 
 end

@@ -28,10 +28,12 @@ Scenario Outline: POI icons are
       | input        | output sequence |                    
       |  A,B,C,D     |  A,B,...        |                    
       |  B,C,D,E,F,G |  B,C,...        |                    
-      |  E,B,R,D     |  B,D,...        |                    
- 
+      |  E,B,R,D     |  B,D,...        |           
 
+    Examples: Scenario: Repeated POI categories are filtered.	 	 
+      | input        | output sequence |
+      |  A,B,B       |  A,B,...        |
+      |  A,B,B,C     |  A,B,...        |
+      |  B,B         |  B,...          |
+      |  C,C,C       |  C,...          |
 
-
-
- 
