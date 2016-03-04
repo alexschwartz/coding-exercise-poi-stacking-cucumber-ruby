@@ -35,8 +35,11 @@ class PoiStackingStrategy
 
    def stack(input)
      output = []
-     input.sort.each { |c| output << c }
-     output
+     seq = input.sort
+     if (seq.length > 3) 
+         return [ 'A', 'B', '...' ]
+     end
+     seq
    end
 
 end

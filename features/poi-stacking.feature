@@ -24,5 +24,10 @@ Scenario Outline: POI icons are
       |  Z,A,E    |  A,E,Z          |                   |
       |  B,C,A    |  A,B,C          |                   |
 
+    Examples: More than three POI icons are abbreviated with dots.
+      | input     | output sequence | comment           |
+      | A,B,C,D   |  A,B,...        |                   |
+
+
 
  
