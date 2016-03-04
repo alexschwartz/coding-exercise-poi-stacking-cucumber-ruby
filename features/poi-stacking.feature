@@ -19,4 +19,10 @@ Scenario Outline: POI icons are
       |  A,B      |  A,B            |                   |
       |  A,B,C    |  A,B, C         |                   |
 
+    Examples: POIs are ordered by priority of their category
+      | input     | output sequence | comment           |
+      |  Z,A,E    |  A,E,Z          |                   |
+      |  B,C,A    |  A,B,C          |                   |
+
+
  

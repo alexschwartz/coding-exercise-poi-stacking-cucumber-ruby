@@ -34,7 +34,9 @@ end
 class PoiStackingStrategy 
 
    def stack(input)
-     input
+     output = []
+     input.sort.each { |c| output << c }
+     output
    end
 
 end
